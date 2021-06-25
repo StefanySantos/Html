@@ -169,7 +169,42 @@ h1 {
     text-align: center;
 }
 
+.endereco {
+    padding: 40px 0;
+    background-image: url(../img/imagem-fundo-ranking.jpg);
+}
+
+.conteudo-endereco {
+    margin: 0 auto;
+    width: 850px;
+    position: relative;
+}
+
+.conteudo-endereco h2 {
+    color: #FFAF00;
+    font-size: 50px;
+    font-weight: 500;
+    /*REFERENCIA PRA ALGUEM*/
+}
+
+.texto-endereco {
+    color: #A259F7;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #010010;
+    border: solid 2px #A259f7;
+    padding: 50px 50px;
+}
+
+.texto-endereco p {
+    width: 400px;
+    font-size: 20px;
+}
+
 .mapa {
-    width: 309px;
-    height: 265px;
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    /*PEGA REFERENCIA DO PAI CONTEUDO-ENDERECO H2*/
+    top: 0px;
+    right: 20px;
 }
