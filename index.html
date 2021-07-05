@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style04.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/layout_tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/layout_smartphone.css">
+    <script src="https://kit.fontawesome.com/fa6968a204.js" crossorigin="anonymous"></script>
     <title>Landing Page</title>
 </head>
 
@@ -85,7 +88,28 @@
 
     </main>
 
-    <footer></footer>
+    <footer>Copyright &copy; 2021 - Escola Senai de Informática</footer>
+
+<script>
+        function mostrarMenu() {
+            var menu = document.getElementById("menu-header");
+            var icone = document.getElementById("icone-menu");
+
+            if (menu.style.display == "none") {
+                menu.style.display = "flex";
+                icone.classList.remove("fa-bars");
+                icone.classList.add("fa-times");
+                //MUDAR PARA TIMES
+            } else {
+                menu.style.display = "none";
+                icone.classList.remove("fa-times");
+                icone.classList.add("fa-bars");
+            }
+
+
+        }
+    </script>
+
 </body>
 
 </html>

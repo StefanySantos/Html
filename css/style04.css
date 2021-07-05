@@ -21,6 +21,9 @@ body {
 header {
     background-color: #F9003D;
     height: 80px;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
 }
 
 .conteudo-header {
@@ -34,6 +37,7 @@ header {
     width: 50%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu-header a {
@@ -41,6 +45,13 @@ header {
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.menu-header a:hover {
+    font-size: 2em;
+    transition: 0.5s;
+    /* color: black; */
+    text-shadow: 4px 4px 6px #0000007a;
 }
 
 .banner {
@@ -134,11 +145,17 @@ h1 {
     font-weight: 500;
 }
 
+.texto-sobre p {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: justify;
+}
+
 .info {
     background-image: url(../img/imagem-fundo-info.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /*centraliza a limagem*/
+    /*centraliza a imagem*/
     background-size: cover;
     padding: 40px 0;
 }
@@ -207,4 +224,17 @@ h1 {
     /*PEGA REFERENCIA DO PAI CONTEUDO-ENDERECO H2*/
     top: 0px;
     right: 20px;
+}
+
+footer {
+    height: 80px;
+    background-color: #F9003D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
